@@ -1,0 +1,12 @@
+.format just some noteboks that i have and they are not the best
+print('hello {}'.format('world'))
+#takes a string and combine it with another string
+
+print('hello {} {} {}'.format('world','its','me'))
+#a string combined with a string
+
+print('Hello {w} {i} {m}'.format(w='world',i='its',m='me'))
+#makes variables and put the letters in curly braces to whatever letter or variable you have in the order you want 
+#ex print('Hello {w} {m} {i}'.format(w='world',i='its',m='me'))
+#result = hello world me its
+
