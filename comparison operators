@@ -1,0 +1,70 @@
+#simple comparsion test (the boolean here is True)
+2 == 2
+
+#another example of a comprison (boolean here is False)
+2 == 1
+
+#dont do 1 = or python will think your making a variable#
+
+#you can also do comparison to strings (boolean here is False)
+'hello' == 'bye'
+
+#you can also do comparison to floats (boolean here is False)
+2.345 == 4.561
+
+#you cannot do all of these below or it will result to this
+#all of this make the same result "False"
+'bye' == 'Bye'
+'2' == 2
+'2.324' == 2.324
+
+#for floats as long as they hold the same value it will result in "True"
+2.0 == 2
+
+#another example
+#meaning 4 is not greater than 5 which is "True"
+4 != 5
+
+#you can also do greater than
+2 > 1
+
+#another example (result here is False)
+1 > 2
+
+#you can also do less than (result here is True)
+1 < 2
+
+#you can also do is this int/string/float = or >/< to this int/string/float (which is true)
+2 >= 2
+
+#another example
+#stating is 4 equal to or less than one (which is false)
+4 <= 1
+
+#you can also put 2 comparisons together 
+#saying 1 is less than 2 (which is "True") and then it says is 2 greater than 3 (which is "False") so it would result..
+1 < 2 > 3
+
+#another example
+#saying 1 is less than 2 (which is "True") and then saying is 2 less than 3 ("which is also true so it would result..")
+1 < 2 < 3
+
+#you can also do
+#combining/chaining 2 comparisons into one (result is true
+2 > 3 and 1 < 4
+
+#another way you could do this (result is true)
+'h' == 'h' and 2 == 2
+
+#the "or" function is saying one of the comparisons need to be True/False (result is true)
+1 > 2 or 5 < 6
+
+#another example (result tue)
+3 < 4 or 2 > 3
+
+#retruns the opposite of the answer (result is false)
+#(you do not have to put parenthesis just makes it look more readable in my opinion)
+not(1 == 1)
+
+#another example (result true)
+not(2 == 3)
