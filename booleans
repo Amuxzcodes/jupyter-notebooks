@@ -1,0 +1,10 @@
+#simple examples of booleans
+1 > 2 the result of this is true
+
+#example
+1 == 1 the result of this is true
+
+#remember to put a capital N
+#if you dont want to assign  a variable yet 
+b = None result is nothing
+
