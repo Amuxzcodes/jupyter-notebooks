@@ -1,0 +1,113 @@
+#simple function
+def say_hello():
+    print('hello')
+say_hello()
+
+#do not d this or it will result into something weird
+say_hello
+
+#you can also do this
+def say_hello():
+    print('hello')
+    print('who')
+    print('are')
+    print('you')
+say_hello()
+
+#you can also do
+name = " amulya"
+def dababy_is_goated(name):
+    print('hello' + name)
+    #saying print hello plus name 
+    #can also excpet arguments/variables to the def 
+    #so its basically saying put 'hello' and name/" amulya" together
+    
+    dababy_is_goated(name)
+    
+#you can also do this
+def dababy_is_goated():
+    print('hello' + ' amulya')
+    
+    #you can also use fstrings
+def say_hello(name):
+    print(f'hello {name}')
+say_hello(name)
+
+#you can also do this
+def say_hello(world):
+    print(f'hello {world}')
+say_hello('thursday')
+#takes "name" and replaces it as "thursday"
+#you can call the fake/not real variable "name" and make it to anything like "jelly" or "money"
+
+#if you only do say_hello() it will result to an error
+say_hello()
+
+#but you can also put a defualt value if you dont want to put a argument
+def say_hello(world='defualt'):
+    print(f'hello {world}')
+say_hello()
+
+#return keyword
+def test_return(num1,num2):
+    return num1+num2
+result = test_return(1,2)
+print(result)
+#the difference of "return" and "print" is instead of printing out the result its actually going to allow you to save
+#them as a variable
+
+#normally it would just show the normal or bland text
+test_return(10,20)
+
+#but with return you can make a variable with it
+return1 = test_return(10,20)
+return1
+
+#another example of a regular function
+def print_result(a,b):
+    print(a+b)
+    
+#another example of the return function
+def return_result(a,b):
+    return a+b
+    
+    #prints out 20 + 30 because in print_result it says "print(a+b)"
+print_result(20,30)
+
+#prints out 20 + 30 because in print_result it says "print(a+b)"
+print_result(20,30)
+
+#if you wanted to save the result in a variable you cant because you cant cuz its a "print" statement
+r = print_result(20,30)
+r
+#it just results to nothing
+
+#nothing..............................................................................................................
+
+#and if you check what type it is it will result in NoneType
+type(r)
+
+#if you wanted to save it into a variable you would ahve to use "return"
+r = return_result(20,30)
+r
+
+#if for some reason you wanted to see the print result and the return result you can do this
+def myfunc(a,b):
+    print(a+b)
+    return a+b
+#so you can do this
+myfunc(10,20)
+#as you can see shows two 30 because its showing print and return
+
+#and you can make a variable to save it
+re = myfunc(10,20)
+
+#simple return function
+def sum_num(num1,num2):
+    return num1+num2
+    
+    #simple code and result is 30
+sum_num(10,20)
+
+#but if you add strings together you get '1020'
+sum_num('10','20')
