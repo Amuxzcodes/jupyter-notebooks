@@ -1,0 +1,59 @@
+#basic dictionary
+priceslookup = {'apple':2.99,'bananas':1.99,'strawberryies':3.99}
+
+priceslookup
+#shoes dictionary
+
+#shows basic dict command to lookup the price/value of the string/int/float/ 'apple'
+priceslookup['apple']
+
+#can also work with list too
+list = {'k1':123,'k2':'1,2,3,4'}
+list
+
+#can also make dictionarys inside dictionarys
+list = {'k1':123,'k2':'1,2,3,4','k3':{'1000':'hello world'}}
+list
+
+list['k3']
+#you can also do
+list['k3']['1000']
+
+#another example
+example = {'e1':[2,3,4]}
+example['e1'][0]
+
+#changing the letter to be uppercase or lowercase by putting .lower() at the end
+d = {'k1':['a','b','c']}
+d
+
+d['k1'][2].upper()
+
+#adding a dictionary in a dictionary
+d = {'k1':'100','k2':200}
+d
+
+d['k3'] = 300
+d
+
+#you can also make new values for dictinaries
+d['k1'] = 'NEW VALUE'
+d
+
+#resigning it back to normal 
+dictonary_right_now  = d
+d
+
+#resigning it
+dictionary_before_is_now_dictonary_right_now = d = {'k1':'100','k2':200}
+d
+
+#showing the all the keys
+d.keys()
+
+#showing all of the values
+d.values()
+
+#shows the pairings/keys and values togethter
+d.items()
+
