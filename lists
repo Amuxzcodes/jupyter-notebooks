@@ -1,0 +1,35 @@
+
+mylist = ['a','d','r','e']
+#basic list of letters
+mynumlist = [1,3,2,5,7,1,0]
+#basic list of numbers
+
+#sorting in numeral order
+mynumlist.sort()
+mynumlist
+
+#sorting in alphabetical order
+mylist.sort()
+mylist
+
+#reverses the order
+mylist.reverse()
+mylist
+
+#revereses the order
+mynumlist.reverse()
+mynumlist
+
+#adding a string/float/int at the ensd of the list
+mylist.append('c')
+mylist
+
+#takes out the last string/float/int in the list
+mylist.pop()
+mylist
+
+#you could also take out any string/float/int you want by simply putting a -and whatever number of the text you want 
+#to take out
+mylist.pop(-1)
+mylist
+
