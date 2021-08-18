@@ -1,0 +1,74 @@
+#simple if statement
+#its saying if its true then print('its true')
+if True:
+    print('its true')
+    
+    #another exxample
+if 3>2:
+    print('correct')
+    
+    #another example
+hungry = True
+if hungry:
+    print('FEED ME!')
+    
+    #if you put false it will result to nothing
+hungry = False
+if hungry:
+    print('FEED ME!')
+    
+    #simple else statement
+#saying if you are hungry (which is not because it says "False") but if it was true it would say "FEED ME!" but its 
+#false so it says "i am not hungry" because of the else statement
+hungry = False
+if hungry:
+    print('FEED ME!')
+else:
+    print('i am not hungry')
+    
+    #another example
+hungry = True
+if hungry:
+    print('FEED ME!')
+else:
+    print('i am not hungry')
+    
+    #loc means location
+#location is "Bank but it says if loc is "Auto shop" it prints "cars are cool!" but otherwise/else print 
+#"i do not know much"
+loc = 'Bank'
+if loc == 'Auto shop':
+    print('cars are cool!')
+else:
+    print('i do not know much')
+    
+    #elif is bassicaly another statement
+#saying else or if loc is bank then print "i like money"
+loc = 'Bank'
+if loc == 'Auto shop':
+    print('cars are cool!')
+elif loc == 'Bank':
+    print('i like money')
+else:
+    print('i do not know much')
+    
+    #another example
+loc = 'Store'
+if loc == 'Auto shop':
+    print('cars are cool!')
+elif loc == 'Bank':
+    print('i like money')
+elif loc == 'Store':
+    print('lets get groceries!')
+
+else:
+    print('i do not know much')
+    
+    #another example
+name = 'Amulya'
+if name == 'Sammy':
+    print('hello Sammy')
+elif name == 'Amulya':
+    print('hello master come in for the big feast')
+else:
+    print('i do not know your name mind telling me?')
