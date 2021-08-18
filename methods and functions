@@ -1,0 +1,26 @@
+mylist = [1,2,3]
+#some methods and fuctions ive already used (currently August 2, 2021 10:39 pm)
+mylist
+
+mylist.append(4)
+mylist
+
+#takes out a int/string/float at the end of a list/tuple
+mylist.pop()
+
+#just to find some new stuff to use do mylist. (or whatever your list/tuple is calles) and then press tab
+mylist.clear()
+#like clear that i found in 10:44 5 minutes after i made this
+
+#just putting all the numbers back
+mylist.append(4)
+
+#just to find what things do you can do this
+mylist.append
+#press shift+tab and you can find what this does
+#you can also do help(mylist.append)
+#or 
+#episode 41 in zero to hero course at 3:19 it shows the python documentation so you might want
+#to look at that furure self or others whom i share this to
+#it shows information on the most recent updates in python
+
