@@ -1,0 +1,7 @@
+print(f'hello','world','its','me')
+
+#another ex.
+name = "amulya"
+age = 10
+print(f'this is {name} he is {age} years old')
+
