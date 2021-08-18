@@ -1,0 +1,88 @@
+#simple for loop ( been knowing how to do this since i started coding fun fact to my future self)
+mylist = [1,2,3,4,5,6,7,8,9,10]
+for p in mylist:
+    print(p)
+    
+    #checks for all the even numbers after 2 all the way to the last int/string/float in "p"/whatever name you put it as
+for p in mylist:
+    #checks for even
+    if p % 2 == 0:
+        print(p)
+        
+        #and for else..
+for p in mylist:
+    if p % 2 == 0:
+        print(p)
+    else:
+        print(f'odd number: {p}')
+        #finds all the odd number in "num"
+        # so basically it is saying find all the even numbers and display it other/else numbers get stored in
+        #odd number:
+        
+        #basically like this
+#1+2+3+4+5+6+7+8+9+10 = 55
+list_sum = 0
+
+for p in mylist:
+    list_sum = list_sum + p
+
+print(list_sum)
+#so it basically ads the previuos number to the next number kinda like 1 and then after 1 its 2 then you add it together
+
+#when you do this you get the whole countdown
+list_sum = 0
+
+for p in mylist:
+    list_sum = list_sum + p
+
+#you can do the same for tuples
+tup = (1,2,3)
+for item in tup:
+    print(item)
+    
+    #another example
+mylist = [(1,2),(3,4),(5,6),(7,8),(9,10)]
+#above is a example of a list containing tuples
+for item in mylist:
+    print(item)
+    
+    #takes them out of the tuple and puts them in order from 1 to 10
+#the thing above is called tuple unpacking which duplicates the structures of the item
+#so in this case unpacking the tuples in "mylist"
+for (a,b) in mylist:
+    print(a)
+    print(b)
+
+    
+ #(you do not need the parenthesis in "a,b" just makes it look more readable in my opinion)
+ 
+ #when you take out "b" it takes out all the even numbers and leaves the uneven numbers
+for (a,b) in mylist:
+    print(a)
+    
+    #when you take out "a" it takes out all the uneven numbers and leaves the even numbers
+for (a,b) in mylist:
+    print(b)
+    
+    #another example
+mylist = [(1,2,3),(5,6,7),(8,9,10)]
+for (a,b,c) in mylist:
+    print(a)
+    print(b)
+    print(c)
+    
+    #for loops in dictionary
+#it only shows the keys 
+d = {'k1':1,'k2':2,'k3':3}
+for item in d:
+    print(item)
+    
+    #to show the value you need to do this
+d = {'k1':1,'k2':2,'k3':3}
+for value in d.values():
+    print(value)
+    
+    #keep this in mind if you have a big dictionary then the keys and values will not be in order
+#the dictionary above is in order because its a simple and small
+
+    
