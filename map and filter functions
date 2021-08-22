@@ -1,0 +1,27 @@
+#map function
+
+def splicer(mystring):
+#making a function that says if mystring has a even number in the string length, return 'EVEN'
+  if len(mystring)%2 == 0:
+    return 'EVEN'
+  else:
+    return mystring[0]
+  
+name = ['andy','eve','sally']
+sn = print(list(map(splicer,name)))
+sn
+#it results so if a string in the list has a even amount of letters it returns 'EVEN' but when the names dont have a even amount of numbers it shows the first letter of the uneven string
+
+#filter function
+
+#if you only want to grab even numbers you can do this 
+def check_even(num):
+  return num%2 == 0
+
+mynums = [1,2,3,4,5,6]
+
+cm = print(list(filter(check_even,mynums)))
+cm 
+#you can also do it with a for loop
+for n in filter(check_even,mynums):
+  print(n)
