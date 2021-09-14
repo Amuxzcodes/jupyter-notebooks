@@ -1,0 +1,198 @@
+#a class is used to like be a "blueprint" for different objects. So like basically bundling data from the objects
+
+#if you want to make a new object in a class you have to use the init function again
+
+#regular class
+class myclass:
+  x = 5
+print(myclass)
+
+# we can make objects in a class and give them a value
+p1 = myclass()
+print(p1.x)
+
+#the _init_() fucntion
+
+#the init function is used to assign value to objects in classes
+
+#here is how you can use the init function
+
+#a class named person
+class Person:
+#self is just to define the object so in my case self is defining name and age by saying self.name and self.age
+  def __init__(self, name,age):
+    self.name = name
+    self.age = age
+
+p1 = Person('amulya',10)
+
+print(p1.name)
+print(p1.age)
+
+#just a quick explanation of what the __init__() function does
+#the __init__() function is used to put a value to an object like self.name or self.age in a class
+
+
+
+
+
+
+#next thing is about object methods
+#object methods is basically a function in a object so in my case a function in a init function which is basically a object
+
+class hello:
+  #making a object with self.name and self.age
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+#a function that has a perameter thats called self
+  def myfunc(self):
+    #printing the string with self.name
+    print('hello my name is: ' + self.name)
+#showing the name and the age
+hq = hello('amulya', 10)
+#putting the command with the function
+hq.myfunc()
+
+#another example
+
+#you do not have to call your paremeters "self" you can call it aything you want
+
+class hola:
+  def __init__(example, name , age):
+    example.name = name
+    example.age = age
+
+  def ex(n):
+    print('hello my name is: ' + n.name)
+
+a1 = hola('Amulya',10)
+
+a1.ex()
+
+
+#you can also do this
+class hi:
+  def __init__(self, name ,age):
+    self.name = name
+    self.age = age
+  
+  
+  def e(self):
+    
+   print('hi! My name is ' + self.name)
+  
+x = hi('amulya',10)
+
+x.age = 21
+
+
+
+x.e()
+
+  
+print(x.age)
+  
+  
+  #inherit classes
+  
+  class person:
+  #cretaing a object for the class above
+  def __init__(self,fname,lname):
+    self.firstname = fname
+    self.lastname = lname
+#creating a function to use the objects/properties
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+#Use the Person class to create an object, and then execute the printname method:
+
+x = person('Amulya', 'Devkota')
+
+x.printname()
+
+#creating a class named student
+
+#making a class that inherites the ability to use the objects in person into students
+class students(person):
+#note: when you do not want to do anything with the class right now you can use the pass function
+  pass
+
+#now creating a object so we can usew something from th eperson class in the students class
+
+h = students('Anmol', 'Devkota')
+
+h.printname()
+
+
+#now we are going to do the same thing except with thew __init__() filter
+
+class another(person):
+  #when you add a new __init__() function it will not be the same as the one from the person class
+  def __init__(self, fname, lname):
+      self.firstname = fname
+      self.lastname = lname
+
+f = another('Laxman', 'Devkota')
+
+f.printname()
+
+#when you add a new __init__() function it will not be the same as the one from the person class. So now here is how youy can connect the __init__() function freom person to the class below
+
+class another_one(person):
+  def __init__(self, fname, lname):
+    #taking the __init__() function from person and putting it here
+    #now i can use both __init__() function in one class
+    person.__init__(self, fname, lname)
+
+a = another_one('Uma', 'Devkota')
+
+a.printname()
+
+
+
+class another_2(person):
+  def __init__(self, fname, lname):
+    #there is also a super() function that inherites all the stuff in the other class. So in my case it takes everything in person and puts it in this class
+    super().__init__(fname, lname)
+
+g = another_2('Sita', 'Devkota')
+
+g.printname()
+
+class another_a(person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+    #putting a property called gradyear
+    self.gradyear = 2020
+    super().__init__(fname, lname)
+
+    #putting a property called gradyear
+    self.gradyear = 2020
+
+
+
+b = another_a('Duku', 'Khadka')
+
+print(b.gradyear)
+
+class another_b(person):
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    #putting a paremeter
+    self.grady = year
+
+m = another_b('Sita', 'Khadka', 2020)
+print(m.grady)
+
+class another_c(person):
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    self.grad = year
+
+  def welcome(self):
+    print('Welcome', self.firstname, self.lastname, 'to the class of', self.grad)
+
+l = another_c('Amulya', 'Devkota', 2020)
+
+l.welcome()
