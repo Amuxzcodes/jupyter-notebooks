@@ -1,0 +1,70 @@
+#iterating with a tuple
+mytuple = ("Apple", "Cherry", "Banana")
+myit = iter(mytuple)
+#basically going through each of the strings in the tuple and printing it.
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+#iterating with a string
+mystr = 'banana'
+
+myit1 = iter(mystr)
+
+print(next(myit1))
+print(next(myit1))
+print(next(myit1))
+print(next(myit1))
+print(next(myit1))
+print(next(myit1))
+
+#you can also iterate with a for loop
+for i in mytuple:
+  print(i)
+
+  #now we are basically itersting numbers starting from 1 and counting up to 2,3,4,5, etc.
+  class numbers:
+    def __iter__(self):
+      self.a = 1
+      return self
+
+    def __next__(self):
+      x = self.a
+      self.a += 1
+      return x
+
+myclass = numbers()
+it = iter(myclass)
+
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+
+#to make a iteration stop we can use StopIteration
+
+class mynumbers:
+  def __iter__(self):
+    self.a = 1
+    return self
+
+  def __next__(self):
+    if self.a <= 20:
+      x = self.a
+      self.a += 1
+
+      return x
+
+    else:
+       raise StopIteration
+myclass1 = mynumbers()
+myiter = iter(myclass1)
+
+for x in myiter:
+  print(x)
