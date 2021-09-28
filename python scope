@@ -1,0 +1,58 @@
+#A variable is only available from inside the region it is created. This is called scope.
+
+#A variable created inside a function belongs to the local scope of that function, and can only be used inside that function.
+def myfunc():
+  #local scope below and can only use this inside the function it is in
+  x = 300
+
+myfunc()
+#as you can see the variable 300 is not able to be used in any outside functions. But you can use it in a function inside a function
+
+def myfunc1():
+  f = 400
+  def myfunc2():
+    print(f)
+
+  myfunc2()
+myfunc1()
+
+#A variable created outside of a function is global and can be used by anyone
+
+v = 500
+def myfunc3():
+  print(v)
+
+myfunc3()
+print(v)
+
+#The function will print the local b, and then the code will print the global b
+
+b = 600
+def myfunc4():
+  b = 500
+  print(b)
+
+myfunc4()
+
+print(b)
+
+#If you need to create a global variable, but are stuck in the local scope, you can use the global keyword.
+#The global keyword makes the variable global.
+
+def myfunc5():
+  global j
+  j = 700
+
+myfunc5()
+
+print(j)
+
+#Also, use the global keyword if you want to make a change to a global variable inside a function.
+d = 300
+def myfunc6():
+  global j
+  d = 200
+  print(d)
+
+myfunc6()
+
