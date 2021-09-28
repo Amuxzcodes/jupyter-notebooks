@@ -1,0 +1,54 @@
+#Consider a module to be the same as a code library.
+
+#A file containing a set of functions you want to include in your application.
+
+#To create a module just save the code you want in a file with the file extension .py
+
+#Save this code in a file named mymodule.py:
+
+#def greetings(name):
+#print('greetings', name)
+
+#Now we can use the module we just created, by using the import statement:
+
+import mymodule
+mymodule.greetings('Amulya')
+
+#keep this code in the mymodule file
+#person1 = {
+ # 'name': 'Amulya',
+  #'age': 10,
+  #'country': 'America'
+#}
+
+#another example
+a = mymodule.person1['age']
+
+print(a)
+
+#You can create an alias when you import a module, by using the as keyword
+
+import mymodule as mx
+
+b = mx.person1['name']
+print(b)
+
+#There are several built-in modules in Python, which you can import whenever you like.
+
+#import platform
+
+import platform
+h = platform.system()
+print(h)
+
+#There is a built-in function to list all the function names (or variable names) in a module. The dir() function
+
+x = dir(platform)
+print(x)
+
+#You can choose to import only parts from a module, by using the from keyword.
+
+#Import only the person1 dictionary from the module:
+from mymodule import person1
+
+print(person1['age'])
